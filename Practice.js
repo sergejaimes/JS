@@ -9,3 +9,4 @@ for (let counter = 1; counter <= 7; counter += 1){
 }
 */
 
+//Practice Problem 2 for Eloquent Javascript
