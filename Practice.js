@@ -38,22 +38,16 @@ for (let numberCount = 1; numberCount <= 100; numberCount++){
 var board = "";
 var boardSize = 8;
 
-   for (var lineCount = 0; lineCount < boardSize; lineCount++) {
-       for (var spaceCount = 0; spaceCount < boardSize; spaceCount++) {
-           if (lineCount % 2 == 0) {
-                var black = "#";
-                var white = " ";
-           } 
-            else {
-                black = " ";
-                white = "#";
-            }
-           if (spaceCount % 2 == 0) {
-               board += white;
-           } else {
-               board += black;
-           }
+   for (var x = 0; x < boardSize; x++) {
+       for (var y = 0; y < boardSize; y++) {
+          if ((x + y) % 2 == 0) {
+            board += " ";
+          }
+          else{
+            board += "#";
+          }
        }
        board += "\n";
-   console.log(board);
-*/
+    }
+    console.log(board);
+    */
